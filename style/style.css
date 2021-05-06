@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+html {
+    /* untuk mencegah perubahan lebar halaman karena munculnya scrollbar */
+    overflow-y: overlay;
+}
+
+body {
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+#menu-container {
+    height: 60px;
+    padding: 10px 100px;   
+    /* border-bottom-right-radius: 50px; */
+}
+
+#menu-after-login{
+    float: right;
+    padding: 15px;
+}
+
+#menu-after-login a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 12px;
+    cursor: pointer;
+    display: inline-block;
+    /* margin-left: 5px; */
+}
+
+.img-cart {
+    /* float: right; */
+    margin-left: -11.5px; 
+    /* margin-right: 8px; */
+    float: right;
+}
+
+.img-cart-login {
+    /* float: right; */
+    /* margin-left: -11.5px;  */
+    margin-right: 8px; 
+    float: right;
+}
+
+#menu-after-login b {
+    margin-right: 12px;
+}
+
+#menu a:hover {
+    color: #00008b;
+    font-weight: bold;
+}
+
+#menu-after-login a:hover {
+    color: #00008b;
+    font-weight: bold;
+}
+
+#content {
+    padding: 30px;
+}
+
+#content-cart {
+    padding: 20px 75px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #00008b;
+    padding: 8px;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: #FFF;
+    text-align: right;
+    font-size: small;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 20px 50px;
+    background-color: white;
+    margin: auto auto;
+}
+
+.form-container h1 {
+    text-align: center;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px 0;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background: #DDD;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #27496d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-size: 16px;
+}
+  
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.text_alamat {
+    width: 97%;
+    text-align: left;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+.form-register {
+    padding: 20px 30px;
+    width: 85%;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.form-register h1 {
+    text-align: left;
+}
+
+.form-register label {
+    width: 24%;
+    display: inline-block;
+}
+
+.form-register .element-form input[type=text], .form-register .element-form input[type=password], .form-register .element-form input[type=tel], .form-register .element-form input[type=email] {
+    width: 71%;
+    padding: 15px 15px;
+    margin: 5px 0 22px 20px;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+    border-radius: 5px;
+    /* float:right; */
+}
+
+.form-register .element-form input[type=text]:focus, .form-register .element-form input[type=password]:focus, .form-register .element-form input[type=tel]:focus .text_alamat:focus, .form-register .element-form input[type=email]:focus {
+    background: #DDD;
+    outline: none;
+}
+
+.form-register .element-form .btn {
+    background-color: #27496d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    margin: 0px auto;
+    opacity: 0.8;
+    font-size: 16px;
+    border-radius: 10px;
+    display: block;
+}
+
+.form-register .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.notif {
+   text-align: center;
+   margin-bottom: 10px;
+   font-weight: bold;
+   color: #bb3b0e;
+}
+
+#bg-page-profile {
+   padding-left: 55px; 
+   overflow: hidden;
+}
+
+#bg-page-main {
+    padding: 0px 55px; 
+    overflow: hidden;
+}
+
+div#kiri {
+    float: left;
+    height: auto;
+    width: 20%;
+}
+
+#menu-profile {
+    float: left;
+    width: 14%;
+}
+
+#menu-kategori {
+    /* float: left; */
+    /* width: 20%; */
+}
+
+#menu-profile ul li {
+    display: block;
+}
+
+#menu-profile ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    text-align: left;
+    background: #00008b;
+    border-radius: 5px;
+}
+
+#menu-profile ul li a:hover,
+#menu-profile ul li a.active  {
+    display: block;
+    text-decoration: none;
+    color: #ebebeb;
+    padding: 10px 20px;
+    background: #27496d;
+    border-radius: 5px;
+}
+
+#menu-kategori ul li {
+    display: block;
+}
+
+#menu-kategori ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    text-align: left;
+    background: #00008b;
+    border-radius: 5px;
+}
+
+#menu-kategori ul li a:hover,
+#menu-kategori ul li a.active  {
+    display: block;
+    text-decoration: none;
+    color: #ebebeb;
+    padding: 10px 20px;
+    background: orange;
+    border-radius: 5px;
+}
+
+ul {
+    margin: 12px;
+    padding: 0px;
+}
+
+#profile-content {
+    float: left;
+    padding: 20px 10px;
+    width: 80%;
+    background: white;
+}
+
+.form-tambah-data-tabel .element-form input[type=text] {
+    width: 77%;
+    padding: 15px 15px;
+    margin: 10px 25px;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.form-tambah-data-tabel .element-form input[type=text]:focus, .form-register .element-form input[type=password]:focus, .text_alamat:focus {
+    background: #DDD;
+    outline: none;
+}
+
+.form-tambah-data-tabel .element-form .btn {
+    background-color: #27496d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    margin: 0px auto;
+    opacity: 0.8;
+    font-size: 16px;
+    border-radius: 10px;
+    display: block;
+}
+
+.form-tambah-data-tabel .element-form .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.form-tambah-data-tabel .element-form label {
+    display: inline-block;
+    width: 13%;
+}
+
+.form-tambah-data-tabel .element-form div.status {
+    margin: 10px 13px;
+    display: inline-block;
+}
+
+.form-tambah-data-tabel .element-form-level div.level {
+    margin: 10px 23px 0px 101px;
+    display: inline-block;
+}
+
+.form-tambah-data-tabel .element-form div input[type=radio]{
+    display: inline-block;
+    margin: 10px 3px 40px 0px;
+}
+
+a.tombol-action {
+    background: #00008b ;
+    color:  #FFF;
+    padding: 8px 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: right;
+    /* float: right; */
+}
+
+a.tombol-action:hover {
+    background: #27496d;
+}
+
+table.table-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-list 
+tr.baris-title {
+    background: #c9c9c9;
+}
+
+.table-list tr th{
+    padding: 10px 7px;
+}
+
+.table-list tr td {
+    padding: 10px 7px;
+    background-color: #FFF;
+}
+
+.table-list tr {
+    /* margin: 10px 0px; */
+    /* padding: 90px; */
+    height: 60px;
+    border-bottom: 1px solid #000;
+}
+
+.kolom-nomor {
+    width:  20px;
+    text-align: center;
+}
+
+.kiri {
+    text-align: left;
+}
+
+.tengah {
+    text-align: center;
+}
+
+.kanan {
+    text-align: right;
+}
+
+#form-tambah {
+    text-align:  right;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+.form-tambah-data-tabel .element-form select {
+    width: 80%;
+    padding: 15px 15px;
+    margin: 10px 25px;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.form-tambah-data-tabel .element-form textarea {
+    width: 92%;
+    padding: 15px 15px;
+    margin: 10px 0px;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.form-tambah-data-tabel .element-form option {
+    width: 75%;
+    padding: 15px 15px;
+    margin: 10px 25px;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.form-register .element-form select {
+    width: 73.8%;
+    padding: 15px 15px;
+    margin: 5px 0 22px 20px;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+    border-radius: 5px;
+    /* display: inline-block; */
+}
+
+.form-register .element-form option {
+    width: 73.9%;
+    padding: 15px 15px;
+    margin: 10px 25px;
+    border: none;
+    background: #f1f1f1;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.element-form input[type=file] {
+    width: 100%;
+    margin: 2px;
+}
+
+p.keterangan-gambar {
+    display: inline;
+    font-size: 14px;
+}
+
+div#cke_editor {
+    width: 96%;
+}
+
+.container-status {
+    display: inline;
+    margin-left: 10px;
+}
+
+.container-level {
+    display: inline;
+    margin-left: 10px;
+}
+
+div#kanan {
+    width: 75%;
+    float: left;
+    margin-left:  15px;
+    height: auto;
+}
+
+#kanan #frame-barang ul {
+    list-style-type: none;
+    margin: 0px;
+    padding:  0px;
+    overflow:  hidden;
+}
+
+#kanan #frame-barang ul li {
+    width:  240px;
+    background: #fafafa;
+    padding: 10px 15px;
+    margin-bottom:  15px;
+    margin-left:  15px;
+    float:  left;
+    border: 3px solid #FFF;
+}
+
+#kanan #frame-barang ul li p.price {
+    font-size: 15px;
+    font-weight: bold;
+    text-align:  right;
+    margin-bottom: 10px;
+}
+
+#kanan #frame-barang ul li a img {
+    display: block;
+    width:  240px;
+    height: 180px;
+}
+
+#kanan #frame-barang ul li .keterangan-gambar {
+    border-top: 1px solid #FFF;
+    border-bottom:  1px solid #FFF;
+    padding:  10px 0px;
+    height: 50px;
+}
+
+#kanan #frame-barang ul li .keterangan-gambar p {
+    text-align:  center;
+    margin:  5px 0px;
+}
+
+#kanan #frame-barang ul li .keterangan-gambar p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#kanan #frame-barang ul li .keterangan-gambar span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+#kanan #frame-barang ul li .button-add-cart {
+    text-align:  center;
+}
+
+#kanan #frame-barang ul li .button-add-cart a {
+    background: #00008b;
+    color:  white;
+    text-decoration: none;
+    padding:  5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius:  3px;
+}
+
+#kanan #frame-barang ul li .button-add-cart a:hover {
+    background: orange;
+}
+
+
+div#detail-barang {
+    background:  white;
+    padding:  15px;
+}
+
+div#detail-barang h2 {
+    margin-top:  0px;
+}
+
+div#detail-barang div#frame-gambar {
+    background: #FBFBFB;
+    padding:  20px;
+}
+
+div#detail-barang div#frame-gambar img {
+    display: block;
+    margin: 0px auto;
+    width: 700px;
+    height: 400px;
+}
+
+div#detail-barang div#frame-harga {
+    margin:  15px 0px;
+}
+
+div#detail-barang div#frame-harga span {
+    font-size:  15px;
+    font-weight: bold;
+    color: red;
+}
+
+div#detail-barang div#frame-harga a {
+    background: #00008B;;
+    color: white;
+    text-decoration: none;
+    padding:  5px 10px;
+    display: inline-block;
+    float: right;
+    border-radius: 3px;
+}
+
+div#detail-barang div#frame-harga a:hover {
+    background: orange;
+}
+
+#detail-barang 
+#keterangan {
+    margin: 20px 0px;
+}
+
+div#menu-cart {
+    float: right;
+    padding: 15px;
+    margin-left: -24px;
+}
+
+div#menu-cart a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    /* margin-left: 5px; */
+}
+
+div#menu-cart a:hover {
+    color: #00008b;
+    font-weight: bold;
+}
+
+#menu{
+    float: right;
+    padding: 15px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 12px;
+    cursor: pointer;
+    /* margin-left: 5px; */
+}
+
+span.total-barang {
+    margin-left:  -2px;
+    display:inline-block;
+}
+
+span.total-barang p {
+    font-size: 12px;
+    color: #00008B;
+}
+
+tr .kiri input.update-quantity {
+    width: 20px;
+    padding:  5px;
+    text-align: center;
+}
+
+td.kanan.hapus_item {
+    position: relative;
+}
+
+td.kanan.hapus_item a{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+    color: #1e5474;
+}
+
+div#frame-button-keranjang a {
+    background:  #00008b;
+    color:  white;
+    text-decoration: none;
+    padding: 7px 20px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+div#frame-button-keranjang a:hover {
+    background-color: orange;
+}
+
+#lanjut-belanja {
+    float: left;
+}
+
+#lanjut-pemesanan {
+    float:  right;
+}
